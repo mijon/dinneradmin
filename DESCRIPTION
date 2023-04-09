@@ -1,0 +1,18 @@
+Package: dinneradmin
+Title: Admin System For Formal Dinner
+Version: 0.0.0.9000
+Authors@R: person('Michael', 'Jones', email = 'michael.jones.gsy@gmail.com', role = c('cre', 'aut'))
+Description: A shiny app to aid the administration of a formal dinner, e.g. for a club or association.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.1),
+    golem (>= 0.4.0),
+    shiny (>= 1.7.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
