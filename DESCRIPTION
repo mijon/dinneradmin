@@ -6,8 +6,14 @@ Description: A shiny app to aid the administration of a formal dinner, e.g. for 
 License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
+    DBI,
+    dplyr,
+    fs,
     golem (>= 0.4.0),
-    shiny (>= 1.7.1)
+    purrr,
+    RSQLite,
+    shiny (>= 1.7.1),
+    stringr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
