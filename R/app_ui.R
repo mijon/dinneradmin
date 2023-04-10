@@ -9,8 +9,22 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      h1("dinneradmin")
+    navbarPage(
+      title = "Dinner Admin Page",
+      tabPanel("DB Load",
+               p("Area to choose which database to work on. Each dinner is a single SQLite database file with the standard table layout. This page allows the user to load saved dinners or create a new dinner")),
+      tabPanel("Food Details",
+               p("View that lets you set up food options, i.e. add, change, and delete starters, mains, and desserts.")),
+      tabPanel("Wine Details",
+               p("View that lets you set up the wine options: add, edit, and remove wine options.")),
+      tabPanel("Billing",
+               p("View that allows setting up billing groups")),
+      tabPanel("Table Set up",
+               p("View that allows the setting up of tables. I.e. creating and deleting tables")),
+      tabPanel("Guests",
+               p("View that lets you make a new guest, set food options, edit food options, assign guests to tables.")),
+      tabPanel("Wine Orders",
+               p("View that lets you set wine orders to tables and billing groups"))
     )
   )
 }
